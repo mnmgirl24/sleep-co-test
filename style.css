@@ -32,6 +32,9 @@ body {
 .text-right {text-align: right;}
 .text-center {text-align: center;}
 
+.tall-50 {min-height: 50vh;}
+.tall-60 {min-height: 60vh;}
+.tall-70 {min-height: 70vh;}
 .tall-80 {min-height: 80vh;}
 .tall-90 {min-height: 90vh;}
 .tall-100 {min-height: 100vh;}
@@ -45,13 +48,36 @@ a:hover {
     color: #FFBE00;
 }
 
-.featured-txt {
-    color: #FFBE00;
+
+
+/* Typography styles */
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
 }
 
-.white-txt {
-    color: white;
+h3 {
+    line-height: 1;
 }
+
+p {
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child {margin-bottom: 0;}
+
+.featured-txt {color: #FFBE00;}
+.white-txt {color: white;}
+
+.small-text {font-size: 1.5rem;}
+.large-text {font-size: 4rem;}
+
+.font-weight-light {font-weight: 200;}
+.font-weight-normal {font-weight: normal;}
+.font-weight-extra-bold {font-weight: 800;}
 
 
 /* Image styles */
@@ -77,10 +103,12 @@ a:hover {
 
 .puppy {
     background-image: url('images/puppy\ yawn.jpg');
+    background-position: 50% 35%;
 }
 
 .pillow {
-    background-image: url('images/pillow.jpg')
+    background-image: url('images/pillow.jpg');
+    background-position: 50% 55%;
 }
 
 
@@ -90,6 +118,14 @@ header h3 {
     line-height: 1;
 }
 
+
+/* Fontawesome icons */
+.fa-solid {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
 
 
 /* Padding Utility Classes */ 
