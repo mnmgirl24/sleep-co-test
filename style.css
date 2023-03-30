@@ -15,6 +15,29 @@ body {border: none;}
 html {border: none;}
 
 
+/* Text styles */
+body {
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.yellow-txt {
+    color: yellow;
+}
+
+.white-txt {
+    color: white;
+}
+
+
 /* Image styles */
 .bg-dark {
     background-color: #192B37;
@@ -28,13 +51,23 @@ html {border: none;}
     min-height: 10rem;
 }
 
-.puppy {
-    background-image: url('images/puppy\ yawn.jpg');
+.sheets {
+    background-image: url('images/sheets.jpg');
 }
 
 .bed {
     background-image: url('images/bed.jpg');
 }
+
+.puppy {
+    background-image: url('images/puppy\ yawn.jpg');
+}
+
+.pillow {
+    background-image: url('images/pillow.jpg')
+}
+
+
 
 
 /* Universal classes */
