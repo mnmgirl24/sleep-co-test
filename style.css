@@ -5,7 +5,30 @@
 }
 
 
+/* Temp styles */
+* {
+    padding: 0.5rem;
+    border: 1px solid rgb(240,240,240);
+}
 
+body {border: none;}
+html {border: none;}
+
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10rem;
+}
+
+.puppy {
+    background-image: url('images/puppy\ yawn.jpg');
+}
+
+.bed {
+    background-image: url('images/bed.jpg');
+}
 
 
 
