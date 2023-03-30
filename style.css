@@ -1,3 +1,10 @@
+/* Colors
+yellow: #FFBE00
+navy: #192B37
+*/
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,19 +13,28 @@
 
 
 /* Temp styles */
-* {
+/* * {
     padding: 0.5rem;
     border: 1px solid rgb(240,240,240);
 }
 
 body {border: none;}
-html {border: none;}
+html {border: none;} */
 
 
 /* Text styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    color: #192B37;
 }
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.tall-80 {min-height: 80vh;}
+.tall-90 {min-height: 90vh;}
+.tall-100 {min-height: 100vh;}
 
 a {
     color: inherit;
@@ -26,11 +42,11 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: #FFBE00;
 }
 
-.yellow-txt {
-    color: yellow;
+.featured-txt {
+    color: #FFBE00;
 }
 
 .white-txt {
@@ -48,7 +64,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 10rem;
+    /* min-height: 10rem; */
 }
 
 .sheets {
@@ -68,11 +84,10 @@ a:hover {
 }
 
 
-
-
-/* Universal classes */
-.centered {
-    text-align: center;
+/* Header styles */
+header h3 {
+    font-size: 5.5rem;
+    line-height: 1;
 }
 
 
