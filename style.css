@@ -103,6 +103,14 @@ p:last-child {margin-bottom: 0;}
     color: white;
 }
 
+.bg-featured {
+    background-color: #FFBE00;
+}
+
+.bg-light {
+    background-color: lightblue;
+}
+
 .bg-img {
     background-position: center;
     background-repeat: no-repeat;
