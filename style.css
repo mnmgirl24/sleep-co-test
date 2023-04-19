@@ -49,6 +49,9 @@ a:hover {
     color: #FFBE00;
 }
 
+.card {
+    border: 3px solid #FFBE00;
+}
 
 
 /* Typography styles */
@@ -117,6 +120,10 @@ p:last-child {margin-bottom: 0;}
     background-size: cover;
     /* min-height: 10rem; */
 }
+
+.portrait {padding-bottom:120%;}
+.landscape {padding-bottom:65%;}
+.square {padding-bottom:100%;}
 
 .sheets {
     background-image: url('images/sheets.jpg');
