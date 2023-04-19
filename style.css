@@ -56,6 +56,8 @@ a:hover {
     text-transform: uppercase;
     border-radius: 0.5rem;
     display: inline-block;
+    appearance: none;
+    border: none;
 }
 
 .social-icons {
@@ -340,6 +342,34 @@ footer a {
     font-size: 1.2rem;
   }
 
+
+/* Form */
+input, textarea{
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    display: block;
+    font-family: inherit;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #FFBE00;
+    outline: none;
+}
+
+form .button {
+    display: inline-block;
+    background-color: #FFBE00;
+    font-size: 1.1rem;
+}
+
+form .button:hover {
+    background-color: white;
+    color: #192B37;
+}
 
 
 
