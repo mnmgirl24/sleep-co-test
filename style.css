@@ -49,20 +49,49 @@ a:hover {
     color: #FFBE00;
 }
 
+.button {
+    padding: 0.5rem 3rem;
+    background-color: #192B37;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.social-icons {
+    border: 0.2rem solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+
 .card {
     border: 3px solid #FFBE00;
 }
 
+.copyright {
+    opacity: 70%;
+}
 
 /* Typography styles */
+h2,h3,h4 {
+    margin-bottom: 1rem;
+}
+
 h2 {
     font-size: 2.5rem;
     line-height: 1.1;
-    margin-bottom: 1rem;
 }
 
 h3 {
     line-height: 1;
+    font-size: 4rem;
+}
+
+h4 {
+    line-height: 1;
+    font-size: 2rem;
 }
 
 p {
@@ -72,6 +101,10 @@ p {
 }
 
 p:last-child {margin-bottom: 0;}
+
+footer h4 {
+    text-transform: uppercase;
+}
 
 .featured-txt {color: #FFBE00;}
 .white-txt {color: white;}
