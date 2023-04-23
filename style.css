@@ -339,6 +339,8 @@ form .button:hover {
 /* Small - Max 768px */
 @media(max-width:48em){
     header h1 {font-size: 1.7rem;}
+
+    .sm-tall-40 {min-height: 40vh;}
     
     .show-sm { display: block; }
     .hide-sm { display: none;  }
