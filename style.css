@@ -333,6 +333,7 @@ form .button:hover {
     .show-md { display: block; }
     .hide-md { display: none;  }
     .md-tall-80 {min-height: 80vh;}
+    .portrait {padding-bottom: 70%;}
 }
 
 
@@ -341,6 +342,9 @@ form .button:hover {
     header h1 {font-size: 1.7rem;}
 
     .sm-tall-40 {min-height: 40vh;}
+
+    .portrait {padding-bottom: 80%;}
+}
     
     .show-sm { display: block; }
     .hide-sm { display: none;  }
@@ -377,6 +381,7 @@ form .button:hover {
     header nav a {font-size: 1rem;}
     header h1 {font-size: 1.3rem;}
     h2 {font-size: 2rem;}
+    h4 {font-size: 1.5rem;}
     .large-text h3 {font-size: 2rem;}
     .medium-text {font-size: 1.5rem;}
     .quote-icon {font-size:3rem;}
