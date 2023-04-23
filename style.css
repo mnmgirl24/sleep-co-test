@@ -103,9 +103,11 @@ body {
 
 
 /* Typography styles */
-h2,h3,h4 {
+h1,h2,h3,h4 {
     margin-bottom: 1rem;
 }
+
+h1 {font-size: 2rem;}
 
 h2 {
     font-size: 2.5rem;
@@ -242,9 +244,6 @@ a:hover {
 }
 
 /* Header styles */
-header {
-    padding: 2rem 5rem;
-}
 
 .logo {
     font-size: 2.5rem;
@@ -285,60 +284,6 @@ footer a {
     font-size: 3rem;
 }
 
-
-
-
-/* Mobile */
-.mobile-show {
-    display: block;
-}
-
-.mobile-hide {
-    display: none;
-}
-
-/* Hamburger menu */
-.hamburger-button {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.5rem;
-    position: fixed;
-    display: inline-block;
-    right: 4vw;
-    top: 5vh;
-    line-height: 1;
-    padding: 1vw;
-    transition: all 0.1s;
-    z-index: 1;
-  }
-  
-  .hamburger-button:hover {
-    color: white;
-  }
-  
-  .hamburger-button.active {
-    color: white;
-  }
-  
-  .mobile-menu {
-    display: none;
-    background-color: #192B37;
-    padding: 10vh 12vw;
-    top: 5vh;
-    right: 0;
-  /*   left: 70vw; */
-    position: fixed;
-  }
-  
-  .mobile-menu a {
-    display: block;
-    text-align: center;
-    padding: 3vh;
-    border-bottom: 1px solid white;
-    font-size: 1.2rem;
-  }
-
-
 /* Form */
 input, textarea{
     padding: 0.5rem;
@@ -369,22 +314,60 @@ form .button:hover {
 
 
 
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
 /* Media queries */
 
 /* Medium - Max 1024px */
 @media(max-width:64em){
-
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+    .md-tall-80 {min-height: 80vh;}
 }
 
 
 /* Small - Max 768px */
 @media(max-width:48em){
-    .mobile-hide{display:none;}
-    .mobile-show {display: block;}
+    header h1 {font-size: 1.7rem;}
+    
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+        
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+
+    .sm-padded { padding: 5%; }
+    .sm-padded-1 { padding: 1rem; }
+    .sm-padded-05 { padding: 0.5rem; }
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+    
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+  }
+
+/* Mid-Small - Max 650px */
+@media(max-width:46em){
+    header .logo {text-align: center;}
+    header nav {text-align: center;}
   }
 
 
 /* XS - Max 576px */
 @media(max-width:36em){
-    
+    header .logo h2 {font-size:1.7rem;}
+    header nav a {font-size: 1rem;}
+    header h1 {font-size: 1.3rem;}
 }
