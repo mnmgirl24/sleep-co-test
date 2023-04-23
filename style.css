@@ -15,6 +15,10 @@ navy: #192B37
     padding: 0;
 }
 
+[class*=grid-], [class*=grid_], [class~=grid] {
+    margin: 0;
+}
+
 /* Padding Utility Classes */ 
 .padded-sm { padding: 2.5%; }
 .padded-md { padding: 5%;   }
@@ -370,4 +374,14 @@ form .button:hover {
     header .logo h2 {font-size:1.7rem;}
     header nav a {font-size: 1rem;}
     header h1 {font-size: 1.3rem;}
+    h2 {font-size: 2rem;}
+}
+
+/* XXS - Max 500px */
+@media(max-width:35em){
+    [class*=grid-]>[class*=col-6], [class*=grid_]>[class*=col-6], [class~=grid]>[class*=col-6] {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .hide-xxs {display: none;}
 }
