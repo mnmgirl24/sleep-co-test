@@ -111,7 +111,7 @@ h1,h2,h3,h4 {
     margin-bottom: 1rem;
 }
 
-h1 {font-size: 2rem;}
+h1 {font-size: 3.5vw;}
 
 h2 {
     font-size: 2.5rem;
@@ -319,16 +319,15 @@ form .button:hover {
 /* Mobile menu styles */
 .hamburger-button {
     cursor: pointer;
-    position: fixed;
-    display: inline-block;
-    right: 4vw;
-    top: 5vh;
-    line-height: 1;
+    position: relative;
     padding: 1vw;
     transition: all 0.1s;
     z-index: 1;
+}
+
+.hamburger-button i {
     font-size: 1.7rem;
-    font-weight: 800;
+    margin-bottom: 0;
 }
 
 .hamburger-button.active {
@@ -384,7 +383,6 @@ form .button:hover {
 
 /* Small - Max 768px */
 @media(max-width:48em){
-    header h1 {font-size: 1.7rem;}
     .medium-text {font-size: 1.5rem;}
     .quote-icon {font-size:3rem;}
 
@@ -427,9 +425,6 @@ form .button:hover {
     header h1 {font-size: 1.3rem;}
     h2 {font-size: 2rem;}
     h4 {font-size: 1.5rem;}
-    .hamburger-button {
-        top: 3vh;
-    }
     .large-text h3 {font-size: 2rem;}
     .xs-tall-40 {min-height: 40vh;}
 }
