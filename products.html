@@ -3,10 +3,13 @@ layout: default
 cards:
  - heading: standard mattress
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
+   featured_image: /images/pillow.jpg
  - heading: deluxe mattress
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
+   featured_image: /images/pillow.jpg
  - heading: luxury mattress
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
+   featured_image: /images/pillow.jpg
 ---
 
         <header class="tall-80 bg-img sheets padded-sm grid">
@@ -55,9 +58,9 @@ cards:
             <section class="grid-center padded-sm">
 
                 {% for item in page.cards %}
-                <div class="col-4_sm-12 padded-sm">
+                <div class="col-4_md-12 padded-sm">
                     <div class="card">
-                        <div class="bg-img portrait"></div>
+                        <div class="bg-img portrait" style="background-image: url('{{item.featured_image}}')"></div>
                         <div class="padded-2">
                             <h4>{{item.heading}}</h4>
                             <p>{{item.description}}</p>
