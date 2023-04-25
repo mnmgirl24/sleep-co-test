@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Contact The Sleep Co.</title>
-
-        <!-- Gridlex stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-        <!-- Google fonts - Catamaran (200,300,500,800) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
-
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
+---
+layout: default
+---
 
         <header class="tall-80 bg-img sheets padded-sm grid">
-            <div class="grid-top header-nav col-12">
-                <div class="col-5_sm-12-middle sm-text-center">
-                    <a href="/index.html" class="logo">
-                        <h2>The Sleep Co</h2>
-                    </a>
-                </div>
-                <nav class="col-7_sm-12-middle text-right sm-text-center">
-                    <a href="/index.html">Home</a>
-                    <a href="/about.html">About</a>
-                    <a href="/products.html">Products</a>
-                    <a href="/contact.html">Contact</a>
-                </nav>
-            </div>
+            {% include header-nav.html %}
 
             <div class="col-12 text-center">
                     <h3 class="font-weight-extra-bold editable">why <span class="featured-txt">wait?</span></h3>
@@ -120,22 +88,3 @@
             </div>
         </section>
         
-        <!-- Footer -->
-        <footer class="bg-dark tall-70 text-center grid-center">
-            <div class="col-8_xs-10-middle padded-md">
-                <h4>The Sleep Co</h4>
-                <p class="padded-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut maiores iusto dolores repudiandae eum, blanditiis dolore officia error tempore, illum aliquam harum adipisci quam in quaerat eveniet ipsa, tempora quidem!</p>
-    
-                <div class="">
-                    <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="social-icons"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <div class="copyright col-12">Copyright 2021</div>
-            
-        </footer>
-
-    </body>
-</html>
