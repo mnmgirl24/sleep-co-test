@@ -1,9 +1,16 @@
 ---
 layout: default
+cards:
+ - heading: standard mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
+ - heading: deluxe mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
+ - heading: luxury mattress
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla harum rerum quis culpa suscipit, debitis architecto dolores vero voluptatem eaque, hic atque minima tenetur repellat numquam nobis alias non.
 ---
 
         <header class="tall-80 bg-img sheets padded-sm grid">
-            
+
             {% include header-nav.html %}
 
             <div class="col-12 text-center">
@@ -46,35 +53,18 @@ layout: default
 
             <!-- Cards -->
             <section class="grid-center padded-sm">
-                <div class="col-4_sm-12 padded-sm">
-                    <div class="card">
-                        <div class="bg-img portrait"></div>
-                        <div class="padded-2">
-                            <h4>standard mattress</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dignissimos, earum, reprehenderit quam libero dolorem fuga ea similique optio quasi ut adipisci aspernatur deleniti nihil modi at animi debitis. Perspiciatis.</p>
-                        </div>
-                    </div>
-                </div>
 
+                {% for item in page.cards %}
                 <div class="col-4_sm-12 padded-sm">
                     <div class="card">
                         <div class="bg-img portrait"></div>
                         <div class="padded-2">
-                            <h4>deluxe mattress</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dignissimos, earum, reprehenderit quam libero dolorem fuga ea similique optio quasi ut adipisci aspernatur deleniti nihil modi at animi debitis. Perspiciatis.</p>
+                            <h4>{{item.heading}}</h4>
+                            <p>{{item.description}}</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-4_sm-12 padded-sm">
-                    <div class="card">
-                        <div class="bg-img portrait"></div>
-                        <div class="padded-2">
-                            <h4>luxury mattress</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dignissimos, earum, reprehenderit quam libero dolorem fuga ea similique optio quasi ut adipisci aspernatur deleniti nihil modi at animi debitis. Perspiciatis.</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 
             </section>
 
