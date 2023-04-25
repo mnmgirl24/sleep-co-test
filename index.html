@@ -1,5 +1,14 @@
 ---
 layout: default
+features:
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis fuga aliquam sed aut quo tempore, accusamus vero asperiores quas, corporis voluptate labore. Voluptatum consectetur provident aliquam recusandae est? Deserunt, expedita!
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis fuga aliquam sed aut quo tempore, accusamus vero asperiores quas, corporis voluptate labore. Voluptatum consectetur provident aliquam recusandae est? Deserunt, expedita!
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis fuga aliquam sed aut quo tempore, accusamus vero asperiores quas, corporis voluptate labore. Voluptatum consectetur provident aliquam recusandae est? Deserunt, expedita!
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis fuga aliquam sed aut quo tempore, accusamus vero asperiores quas, corporis voluptate labore. Voluptatum consectetur provident aliquam recusandae est? Deserunt, expedita!
 ---
 
         <header class="tall-100 bg-img sheets padded-sm grid md-tall-80">
@@ -42,29 +51,12 @@ layout: default
                 <h2><span class="featured-txt editable">features</span> you will love</h2>
             </div>
 
+            {% for item in page.features %}
             <div class="col-3_sm-6_xs-12 padded-1">
-                <i class="fa-solid fa-cloud"></i>
-                <p class="text-left editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatibus laborum eligendi pariatur neque ducimus facilis, aspernatur eveniet rerum excepturi iure.
-                </p>
+                <i class="{{item.icon}}"></i>
+                <p class="text-left">{{item.description}}</p>
             </div>
-
-            <div class="col-3_sm-6_xs-12 padded-1">
-                <i class="fa-solid fa-cloud"></i>
-                <p class="text-left editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatibus laborum eligendi pariatur neque ducimus facilis, aspernatur eveniet rerum excepturi iure.
-                </p>
-            </div>
-
-            <div class="col-3_sm-6_xs-12 padded-1">
-                <i class="fa-solid fa-cloud"></i>
-                <p class="text-left editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatibus laborum eligendi pariatur neque ducimus facilis, aspernatur eveniet rerum excepturi iure.
-                </p>
-            </div>
-
-            <div class="col-3_sm-6_xs-12 padded-1">
-                <i class="fa-solid fa-cloud"></i>
-                <p class="text-left editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatibus laborum eligendi pariatur neque ducimus facilis, aspernatur eveniet rerum excepturi iure.
-                </p>
-            </div>
+            {% endfor %}
         </section>
 
         <!-------- Banner -------->
