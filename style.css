@@ -316,13 +316,51 @@ form .button:hover {
     color: #192B37;
 }
 
+/* Mobile menu styles */
+.hamburger-button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: fixed;
+    display: inline-block;
+    right: 4vw;
+    top: 5vh;
+    line-height: 1;
+    padding: 1vw;
+    transition: all 0.1s;
+    z-index: 1;
+}
+
+.hamburger-button:hover, 
+.hamburger-button:active {
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    padding: 10vh 12vw;
+    top: 2vh;
+    right: 0;
+    /*   left: 70vw; */
+    position: fixed;
+}
+
+.mobile-menu a {
+    display: block;
+    text-align: center;
+    padding: 3vh;
+    border-bottom: 1px solid #FFBE00;
+    font-size: 1.2rem;
+    color: #FFBE00;
+}
 
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.hamburger-menu {
 	display: none;
 }
 
