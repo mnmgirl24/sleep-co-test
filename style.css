@@ -225,9 +225,19 @@ a:hover {
     /* min-height: 10rem; */
 }
 
-.portrait {padding-bottom:110%;}
+/* Aspect ratios */
+.portrait-tall {padding-bottom: 175%}
+.portrait {padding-bottom:125%;}
 .landscape {padding-bottom:65%;}
+.landscape-wide {padding-bottom: 56%;}
 .square {padding-bottom:100%;}
+
+/* Background image position */
+.bg-pos-t {background-position: top;}
+.bg-pos-b {background-position: bottom;}
+.bg-pos-l {background-position: left;}
+.bg-pos-r {background-position: right;}
+
 
 .sheets {
     background-image: url('images/sheets.jpg');
@@ -280,6 +290,7 @@ footer a {
 }
 
 
+
 /* Fontawesome icons */
 .fa-solid {
     display: block;
@@ -287,6 +298,14 @@ footer a {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
+
+
+/* Gallery styles */
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
+
+
 
 /* Form */
 input, textarea{
@@ -315,6 +334,7 @@ form .button:hover {
     background-color: white;
     color: #192B37;
 }
+
 
 /* Mobile menu styles */
 .hamburger-button {
