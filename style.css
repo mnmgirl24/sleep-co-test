@@ -305,6 +305,13 @@ footer a {
     padding: 0.5%;
 }
 
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.9;
+}
 
 
 /* Form */
@@ -361,7 +368,7 @@ form .button:hover {
 
 .mobile-menu {
     display: none;
-    padding: 10vh 10vw;
+    padding: 15vw;
     top: 0;
     right: 0;
     position: fixed;
@@ -373,11 +380,11 @@ form .button:hover {
     padding: 3vh;
     border-bottom: 1px solid #FFBE00;
     font-size: 1.2rem;
-    color: #FFBE00;
+    color: white;
 }
 
 .mobile-menu a:hover {
-    color: white;
+    color: #FFBE00;
 }
 
 

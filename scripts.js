@@ -6,11 +6,11 @@ $( document ).ready(function() {
         $(this).toggleClass("active");
         if($(".hamburger-button").hasClass("active")){
       
-        $(".hamburger-button").html("&#10006;");
+        $(".hamburger-button").html('<i class="fa-solid fa-xmark"></i>');
       
         } else {
       
-          $(".hamburger-button").html("&#9776;");
+          $(".hamburger-button").html('<i class="fa-solid fa-bars"></i>');
       
         }
       });
@@ -19,4 +19,10 @@ $( document ).ready(function() {
     AOS.init({
         duration: 500 // values from 0 to 3000, with step 50ms
     });
+});
+
+// Lightgallery script
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 300,
+    download: false
 });
