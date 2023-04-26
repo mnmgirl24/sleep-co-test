@@ -1,5 +1,7 @@
 ---
 layout: default
+gallery-type: Popup Gallery
+background-color: bg-featured
 gallery:
  - column-size: col-6_sm-12
    aspect-ratio: square
@@ -37,7 +39,9 @@ gallery:
     
 </header>
 
-<section class="padded-sm">
+
+{% if page.gallery-type == "Popup Gallery" %}
+<section class="padded-sm {{page.background-color}}">
     <h2>Popup gallery</h2>
 
     <div class="grid padded-sm gallery" id="lightgallery">
@@ -54,9 +58,9 @@ gallery:
 
 </section>
 
+{% elsif page.gallery-type == "Standard Gallery" %}
 
-
-<section class="padded-sm">
+<section class="padded-sm {{page.background-color}}">
     <h2>Standard gallery</h2>
     <div class="grid padded-sm gallery">
 
@@ -73,3 +77,5 @@ gallery:
     </div>
 
 </section>
+
+{% endif %}
